@@ -1,10 +1,43 @@
-Craigslist Rent Project Instruction
-==============================
 
-This is the scraper codespace for the craigslist rent project: the Python scripts in this codespace are used to script all needed information on each listing from Craigslist for the Top 100 MSA.
+# Craigslist Scraping Suite
 
-The codespace structure is as follows, this public repository only contains the codes in codes/dev/.
+## Overview
+This suite of Python scripts (`main.py`, `scrape_batch.py`, `utils.py`) automates the process of scraping Craigslist for real estate listings across different regions. The suite manages tasks ranging from data extraction, preprocessing, to storing scraped data.
 
+## Features
+- **Data Extraction**: Scrapes real estate listings from Craigslist using Selenium and BeautifulSoup for dynamic and static content handling respectively.
+- **Task Management**: Manages scraping tasks based on pre-defined schedules and records completion times.
+- **Data Preprocessing**: Cleans and preprocesses scraped data, including geocoding and zipcode assignment using Census data.
+- **Efficiency and Scalability**: Implements proxy management and multiprocessing to enhance scraping efficiency and handle large volumes of data.
+
+## Components
+1. **main.py**: Manages the scraping process, including setting up drivers, navigating pages, and extracting listing details.
+2. **scrape_batch.py**: Coordinates batch scraping operations, including reading schedules, handling proxies, and initiating scraping sessions based on tasks.
+3. **utils.py**: Contains utility functions for data handling, such as dataframe creation, preprocessing, geocoding, and command-line argument parsing.
+
+## Usage
+- Prepare environment with Python 3.x and required libraries: Selenium, pandas, BeautifulSoup, requests, and geopandas.
+- Set up task schedules and database credentials as needed.
+- Run `scrape_batch.py` to start scheduled scraping tasks.
+
+## Requirements
+- Python 3.x
+- Selenium, pandas, BeautifulSoup, requests, geopandas, tqdm
+- Firefox WebDriver (or any compatible driver for Selenium)
+
+## Installation
+Ensure Python and all dependencies are installed:
+```bash
+pip install selenium pandas beautifulsoup4 requests geopandas tqdm
+```
+Download and configure the appropriate WebDriver for your browser.
+
+## Configuration
+- Configure scraping tasks in `scrape_batch.py`.
+- Set proxy and database details in respective configurations.
+
+## Example
+This suite is particularly useful for real estate analysts, data scientists, or businesses that rely on up-to-date property listings from Craigslist for market analysis or other applications.
 
 Project Organization
 ------------
