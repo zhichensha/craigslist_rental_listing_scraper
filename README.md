@@ -26,7 +26,7 @@ Project Organization
         ├── dev                    <- Scripts to scrape data from craigslist
         │   └── utils.py           <- Script containing utility-related functions
         │   ├── main.py            <- Script containing scraping-related functions
-        │   └── scrape.py          <- Script to start the scrape
+        │   └── scrape_batch.py          <- Script to start the scrape (utilizing batch submit on the server)
         │
         ├── analysis               <- Scripts to perform analysis needed
             └── time_on_market.ipynb
