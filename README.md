@@ -3,8 +3,7 @@ Craigslist Rent Project Instruction
 
 This is the scraper codespace for the craigslist rent project: the Python scripts in this codespace are used to script all needed information on each listing from Craigslist for the Top 100 MSA.
 
-To run the script, run the following command on terminal: python scrape.py taskNum -d scraped_date;
-If on the grid, then we can add extra options to expediate the process by using more threads and memory: anapy3 scrape.py taskNum -d scraped_date --grid_mem=50G --grid_ncpus=32.
+The codespace structure is as follows, this public repository only contains the codes in codes/dev/.
 
 
 Project Organization
